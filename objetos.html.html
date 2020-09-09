@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>objetos</title>
+</head>
+
+<body>
+  <script>
+/*var transporte={
+  pesados:{bus:{corredor:"buses",trole:"articulados"}},
+  medio:"buseta",
+  liviano:"taxi",
+  extraliviano:"moto"
+}
+
+console.log(transporte);*/
+
+class trans{
+constructor(ciudad,pesado,liviano,extraliviano){
+this.ciudad=ciudad,
+this.pesado=pesado,
+this.liviano=liviano,
+this.extraliviano=extraliviano
+
+}
+viaje(){
+  console.log("En la ciudad de "+this.ciudad+" el transporte pesado es "+this.pesado+
+  " en liviano "+this.liviano+" y en extra liviano "+this.extraliviano
+)
+}
+}
+
+const tquito=new trans("Quito","biarticulados","camionetas","motos")
+const tesmeraldas=new trans("Esmeraldas","microbus","taxi","tricimotos")
+
+
+
+
+tquito.viaje();
+tesmeraldas.viaje();
+ </script>
+</body>
+
+</html>
